@@ -1,0 +1,124 @@
+/* Cor de plano de fundo de toda a pagina */
+body{
+    background-color: white;
+    color: rgb(15, 20, 25);
+}
+
+/* Cor dos links e nao sublinhado*/
+.navigation a, .publications{
+    color: rgb(15, 20, 25);
+    text-decoration: none; /* Muda a cor do sublinhado (no caso nenhum)*/
+}
+
+/* Cursor do mouse esta sobre o link, bordas arredondadas*/
+.navigation a span:hover, .publications:hover{
+    background-color: rgba(15, 25, 20, 0.1);
+    border-radius: 8px;
+}
+
+/* Cor dos numeros e formato da fonte*/
+.statistics span{
+    font-weight: bold;
+    color: rgb(15, 20, 25);
+}
+
+/* Cor do texto escrito*/
+/* 'a' no seletor eh para fazer referencia ao link (eliminando)*/
+.statistics a{ 
+    text-decoration: none;
+    color: rgb(83, 100, 113);
+}
+/* Os links ficam sublinhado apenas quando o cursor do mouse estiver sobre eles*/
+.statistics a:hover{
+    border-bottom: 2px solid rgb(83, 100, 113); /*define os val de larg do fundo da borda, estilo do fundo da borda e cor do fundo da borda.*/
+}
+/* Cor do texto*/
+.action a{
+    color: rgb(83, 100, 113);
+    text-decoration: none;
+}
+
+/* - Cada action tem sua propria cor quando o cursor esta sobre o link da action.
+   - Bordas arredondadas.
+   - Links sublinhados apenas quando colocado o cursor sobre eles.*/
+.reply:hover:first-child, .share:hover:last-child{
+    background-color: rgba(29, 155, 240, 0.1);
+    color:rgba(29, 155, 240, 1);
+    border-radius: 5px;
+    border-bottom: 2px solid rgb(83, 100, 113);
+}
+
+/* - Cada action tem sua propria cor quando o cursor esta sobre o link da action.
+   - Bordas arredondadas.
+   - Links sublinhados apenas quando colocado o cursor sobre eles.*/
+/*.share:hover{
+    background-color: rgba(29, 155, 240, 0.1);
+    color:rgba(29, 155, 240, 1);
+    border-radius: 5px;
+    border-bottom: 2px solid rgb(83, 100, 113);
+}*/
+
+/* - Cada action tem sua propria cor quando o cursor esta sobre o link da action.
+   - Bordas arredondadas.
+   - Links sublinhados apenas quando colocado o cursor sobre eles.*/
+.retzeet:hover{
+    background-color:rgba(0, 186, 124, 0.1);
+    color: rgba(0, 186, 124, 1);
+    border-radius: 5px;
+    border-bottom: 2px solid rgb(83, 100, 113);
+}
+
+/* - Cada action tem sua propria cor quando o cursor esta sobre o link da action.
+   - Bordas arredondadas.
+   - Links sublinhados apenas quando colocado o cursor sobre eles.*/
+.heart:hover{
+    background-color:rgba(249, 24, 128, 0.1);
+    color:rgba(249, 24, 128, 1);
+    border-radius: 5px; /* Borda arredondadas*/
+    border-bottom: 2px solid rgb(83, 100, 113);
+}
+
+/* Cor do nome completo do usuario*/
+.name{
+    color:rgb(15, 20, 25);
+}
+
+/* Cor do nome usuario iniciado com @*/
+.name_2{
+    color:rgb(83, 100, 113);
+}
+
+/* Cor da descricao da biografia */
+.bio{
+    color:rgb(15, 20, 25);
+}
+/* Cor da localizacao e data*/
+.date_location a{
+    color:rgb(83, 100, 113);
+    text-decoration: none;
+}
+
+/* No Tzeet: cor do nome completo */
+.name_full{
+    color:rgb(15, 20, 25);
+}
+
+/* No Tzeet: cor do nome usuario iniciado com @ */
+.name_small{
+    color:rgb(83, 100, 113);
+}
+
+/* Cor da data do Tzeet*/
+.date{
+    color: rgb(83, 100, 113);
+}
+
+/* Cor do texto do conteudo do Tzeet*/
+.comment{
+    color:rgb(15, 20, 25);
+}
+
+/* Cursor sob um Tzeet, o background do Tzeet deve mudar de cor*/
+.comment:hover{
+    background-color: rgba(249, 24, 128, 0.1);
+}
