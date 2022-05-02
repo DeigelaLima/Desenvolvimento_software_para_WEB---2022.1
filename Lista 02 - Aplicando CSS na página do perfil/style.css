@@ -123,6 +123,6 @@ body{
 /* Cursor sob um Tzeet, o background do Tzeet deve mudar de cor*/
 .comment:hover{
     background-color: rgba(249, 24, 128, 0.1);
-    border-radius: 8px; 
+    border-radius: 8px;
 }
 
