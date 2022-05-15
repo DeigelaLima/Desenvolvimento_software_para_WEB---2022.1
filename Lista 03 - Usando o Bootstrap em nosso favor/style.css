@@ -11,11 +11,27 @@ body{
 }
 
 /* Cursor do mouse esta sobre o link, bordas arredondadas*/
-.navigation a span:hover, .publications:hover{
+.navigation a span:hover, .publications a:hover{
     background-color: rgba(15, 25, 20, 0.1);
     border-radius: 8px;
 }
 
+.main{
+    border-left: 1px solid rgba(83, 100, 113, 0.719);
+    border-right: 1px solid rgb(83, 100, 113, 0.719);
+}
+
+.publications {
+    box-shadow: 0px 1px 4px rgba(83, 100, 113, 0.596);
+    border-radius: 8px;
+
+}
+
+.publications a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
 
 /* Cor dos numeros e formato da fonte*/
 .statistics span{
@@ -39,15 +55,45 @@ body{
     text-decoration: none;
 }
 
+.action{
+    background-color: rgba(83, 100, 113, 0.418);
+}
+
+.edit-profile{
+    text-align: right;
+}
+
+.chat{
+    border-top: 1px solid rgba(83, 100, 113, 0.719);
+}
+
 /* - Cada action tem sua propria cor quando o cursor esta sobre o link da action.
    - Bordas arredondadas.
    - Links sublinhados apenas quando colocado o cursor sobre eles. 
    - seletor que envolve relacao de parentesco (nth-child(1))*/
 .reply:hover:nth-child(1){
-    background-color: rgba(29, 155, 240, 0.1);
     color:rgba(29, 155, 240, 1);
     border-radius: 5px;
-    border-bottom: 2px solid rgb(83, 100, 113);
+}
+
+.bi-chat:hover{
+    background-color: rgba(29, 156, 240, 0.295);
+    border-radius: 10px;
+}
+
+.bi-arrow-repeat:hover{
+    background-color: rgba(0, 186, 124, 0.411);
+    border-radius: 10px;
+}
+
+.bi-suit-heart:hover{
+    background-color:rgba(249, 24, 129, 0.411);
+    border-radius: 10px;
+}
+
+.bi-upload:hover{
+    background-color: rgba(29, 156, 240, 0.548);
+    border-radius: 10px;
 }
 
 /* - Cada action tem sua propria cor quando o cursor esta sobre o link da action.
@@ -55,30 +101,24 @@ body{
    - Links sublinhados apenas quando colocado o cursor sobre eles.
    - seletor que envolve pseudo-classe (last-child)*/
 .share:hover:last-child{
-    background-color: rgba(29, 155, 240, 0.1);
     color:rgba(29, 155, 240, 1);
     border-radius: 5px;
-    border-bottom: 2px solid rgb(83, 100, 113);
 }
 
 /* - Cada action tem sua propria cor quando o cursor esta sobre o link da action.
    - Bordas arredondadas.
    - Links sublinhados apenas quando colocado o cursor sobre eles.*/
 .retzeet:hover{
-    background-color:rgba(0, 186, 124, 0.1);
     color: rgba(0, 186, 124, 1);
     border-radius: 5px;
-    border-bottom: 2px solid rgb(83, 100, 113);
 }
 
 /* - Cada action tem sua propria cor quando o cursor esta sobre o link da action.
    - Bordas arredondadas.
    - Links sublinhados apenas quando colocado o cursor sobre eles.*/
 .heart:hover{
-    background-color:rgba(249, 24, 128, 0.1);
     color:rgba(249, 24, 128, 1);
     border-radius: 5px; /* Borda arredondadas*/
-    border-bottom: 2px solid rgb(83, 100, 113);
 }
 
 /* Cor do nome completo do usuario*/
@@ -125,5 +165,38 @@ body{
 .comment:hover{
     background-color: rgba(249, 24, 128, 0.1);
     border-radius: 8px;
+}
+
+.multicons{
+    box-shadow: 0px 2px 3px rgb(83, 100, 113);
+}
+
+.foloow{
+    background-color: rgb(239, 243, 244);
+    border-radius: 8px;
+}
+
+.cady{
+    margin-bottom: 10px;
+}
+
+.margin{
+    padding-right: 40px;
+}
+
+.margin2{
+    margin: 15px;
+}
+
+.margin3{
+    margin: 8px;
+}
+
+.margin4{
+    margin: 15px;
+}
+
+.search-button{
+    border-radius: 20px;
 }
 
