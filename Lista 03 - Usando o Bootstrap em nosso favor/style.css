@@ -11,9 +11,13 @@ body{
 }
 
 /* Cursor do mouse esta sobre o link, bordas arredondadas*/
-.navigation a span:hover, .publications a:hover{
+.navigation a span:hover{
     background-color: rgba(15, 25, 20, 0.1);
     border-radius: 8px;
+}
+
+.publications a:hover{
+    background-color: rgba(15, 25, 20, 0.1);
 }
 
 .main{
@@ -22,9 +26,7 @@ body{
 }
 
 .publications {
-    box-shadow: 0px 1px 4px rgba(83, 100, 113, 0.596);
-    border-radius: 8px;
-
+    box-shadow: 0px 1px 1px rgba(83, 100, 113, 0.596);
 }
 
 .publications a{
@@ -53,10 +55,6 @@ body{
 .action a{
     color: rgb(83, 100, 113);
     text-decoration: none;
-}
-
-.action{
-    background-color: rgba(83, 100, 113, 0.418);
 }
 
 .edit-profile{
@@ -194,6 +192,10 @@ body{
 
 .margin4{
     margin: 15px;
+}
+
+.margin5{
+    margin: 20px;
 }
 
 .search-button{
