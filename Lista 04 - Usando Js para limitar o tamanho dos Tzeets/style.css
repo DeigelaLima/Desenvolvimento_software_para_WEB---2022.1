@@ -11,19 +11,22 @@ body{
     padding-left: 2px;
 }
 
+.glob{
+    text-decoration: none;
+}
+
 .glob:hover{
     background-color: rgb(29, 155, 240);
     border-radius: 25px;
     width: 185px;
     height: 30px; 
-    text-decoration: none;
 }
 
 .vdc{
     text-decoration: none;
 }
 
-.plus{
+.plus:hover{
     background-color: rgb(29, 155, 240);
     border-radius: 25px;
 }
@@ -56,6 +59,13 @@ body{
 .localiza:hover{
     background-color: rgb(29, 155, 240);
     border-radius: 10px;
+}
+.warning{
+    color: rgb(255, 200, 0);
+}
+
+.danger{
+    color: rgb(255, 0, 0);
 }
 
 /* Cor dos links e nao sublinhado*/
@@ -254,4 +264,8 @@ body{
 
 .search-button{
     border-radius: 20px;
+}
+
+.search-button:disabled{
+    filter: brightness(0.7);
 }
