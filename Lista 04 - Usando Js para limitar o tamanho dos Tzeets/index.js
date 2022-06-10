@@ -4,15 +4,15 @@ const botao = document.getElementById("botao")
 
 //função para tratar eventos de mudança em um campo text
 function onTextChange(event){
-    const currentText = event.target.value // texto atual
+    const currentText = edtTzeet.value // texto atual
     const charCount = currentText.length // tamanho do texto atual na caixa
     const missingCharCount = 140 - charCount // limite de letras restantes
     
     txtContador.innerText = (
         !charCount ? "":
         (missingCharCount > 0) ? 
-        `Restam ${missingCharCount} letras` :
-        `Ultrapassou ${Math.abs(missingCharCount)} letras`
+        `${missingCharCount}` :
+        `${missingCharCount}`
     )
     txtContador.classList.remove("warning", "danger")
 
@@ -26,7 +26,4 @@ function onTextChange(event){
         }
 }
 botao.disabled = true // o botão já vai começar desabilitado
-edtTzeet.onchange = onTextChange
-
-
-
+edtTzeet.onkeyup = onTextChange
