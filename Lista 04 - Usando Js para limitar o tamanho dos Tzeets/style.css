@@ -269,3 +269,8 @@ body{
 .search-button:disabled{
     filter: brightness(0.7);
 }
+
+.textareaElement {
+    overflow-x: hidden;
+    overflow-y: auto;
+}

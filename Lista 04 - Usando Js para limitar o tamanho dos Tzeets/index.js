@@ -27,3 +27,4 @@ function onTextChange(event){
 }
 botao.disabled = true // o botão já vai começar desabilitado
 edtTzeet.onkeyup = onTextChange
+
