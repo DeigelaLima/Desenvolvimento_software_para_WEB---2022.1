@@ -7,6 +7,9 @@ function onTextChange(event){
     const currentText = edtTzeet.value // texto atual
     const charCount = currentText.length // tamanho do texto atual na caixa
     const missingCharCount = 140 - charCount // limite de letras restantes
+
+    this.style.height = "auto"
+    this.style.height = (this.scrollHeight) + "px"
     
     txtContador.innerText = (
         !charCount ? "":
@@ -27,4 +30,6 @@ function onTextChange(event){
 }
 botao.disabled = true // o botão já vai começar desabilitado
 edtTzeet.onkeyup = onTextChange
+
+
 

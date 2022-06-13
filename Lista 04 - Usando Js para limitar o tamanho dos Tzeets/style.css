@@ -22,6 +22,11 @@ body{
     height: 30px; 
 }
 
+
+.largura{
+    width: 100%;
+}
+
 .vdc{
     text-decoration: none;
 }
