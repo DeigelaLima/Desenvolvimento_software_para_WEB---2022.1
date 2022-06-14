@@ -30,8 +30,6 @@
          rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
          crossorigin="anonymous">
         
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script> 
-
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
@@ -117,10 +115,57 @@
                               <br>
                               <button class="btn btn-primary search-button d-md-none d-sm-none 
                               d-lg-block d-md-block d-none d-sm-block d-lg-none d-xl-block" 
-                              type="submit">Tzeeter</button>
+                              type="button" id="btnTzeeter" data-bs-toggle="modal" data-bs-target="#exampleModal">Tzeeter</button>
+                              
                               <button class="btn btn-primary search-button d-lg-block d-xl-none d-xl-block" type="submit"><i class="bi bi-chat"></i></button>
                             </div>
                        </div>
+                    </div>
+
+                    <!--modal-->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="d-flex flex-row flex-fill">
+                                        <img src="Images/EU.png" alt="my" class="rounded-circle" id="img-perfil">
+
+                                        <div class="largura">
+                                            <!--caixa de texto-->
+                                            <textarea class="largura" name="" id="edtTzeet" rows="5" placeholder="O que você está pensando?"></textarea>
+
+                                            <div>
+                                                <!--link globo-->
+                                                <a href="#" class="glob"><i class="bi bi-globe"></i><b>Everyone can replay</b></a><hr>
+                                            </div>
+                                        
+                                            <div class="d-flex flex-row justify-content-between">
+                                                <!--icones-->
+                                                <div>
+                                                    <a class="image" href="#"><i class="bi bi-card-image"></i></a><!--image-->
+                                                    <a class="gif" href="#"><i class="bi bi-filetype-gif"></i></a><!--gif-->
+                                                    <a class="emoji" href="#"><i class="bi bi-emoji-smile"></i></a><!--emoji-->
+                                                    <a class="grafico" href="#"><i class="bi bi-bar-chart"></i></a><!--grafico-->
+                                                    <a class="calendar" href="#"><i class="bi bi-calendar-event"></i></a><!--calendar-->
+                                                    <a class="localiza" href="#"><i class="bi bi-geo-alt"></i></a><!--localiza-->
+                                                </div>
+                                                <!--plus +-->
+                                                <!--botao enviar-->
+                                                <div>
+                                                    <span id="txtContador"></span>
+                                                    <span>|</span>
+                                                    <a class="plus" href="#"><i class= "bi bi-plus-circle"></i></a>
+                                                    <button class="btn btn-primary search-button" type="submit" id="botao">Enviar</button>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
                     </div>
 
                     <div class="col-9 main col-xl-6 col-lg-7 col-md-8 col-sm-9">
@@ -131,7 +176,7 @@
 
                             <div class="d-flex flex-column flex-fill">
                                 <!--caixa de texto-->
-                                <textarea name="" id="edtTzeet" rows="5" placeholder="O que você está pensando?"></textarea>
+                                <textarea name="" id="edtTzeeter" rows="5" placeholder="O que você está pensando?"></textarea>
                                 <div>
                                     <!--link globo-->
                                     <a href="#" class="glob"><i class="bi bi-globe"></i><b>Everyone can replay</b></a><hr>
@@ -150,10 +195,10 @@
                                     <!--plus +-->
                                     <!--botao enviar-->
                                     <div>
-                                        <span id="txtContador"></span>
+                                        <span id="txtContadoor"></span>
                                         <span>|</span>
                                         <a class="plus" href="#"><i class= "bi bi-plus-circle"></i></a>
-                                        <button class="btn btn-primary search-button" type="submit" id="botao">Enviar</button>
+                                        <button class="btn btn-primary search-button" type="submit" id="botaao">Enviar</button>
                                     </div>  
                                 </div>
                             </div>
@@ -247,6 +292,8 @@
                 </div>
             </div>
         </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
             <script src="index.js"></script>
+            <script src="duIndex.js"></script>
     </body>
 </html>

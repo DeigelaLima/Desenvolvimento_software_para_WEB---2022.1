@@ -9,7 +9,7 @@ function onTextChange(event){
     const missingCharCount = 140 - charCount // limite de letras restantes
 
     this.style.height = "auto"
-    this.style.height = (this.scrollHeight) + "px"
+    this.style.height = (this.scrollHeight) + "px" //flexibilizar a caixa de texto 
     
     txtContador.innerText = (
         !charCount ? "":
@@ -30,6 +30,3 @@ function onTextChange(event){
 }
 botao.disabled = true // o botão já vai começar desabilitado
 edtTzeet.onkeyup = onTextChange
-
-
-
