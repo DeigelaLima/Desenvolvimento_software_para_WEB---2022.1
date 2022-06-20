@@ -1,0 +1,44 @@
+/* Arquivo login.html*/
+.tiziu{
+    text-align: center;
+}
+
+.content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(52, 26, 223, 0.67);
+}
+
+.form-content{
+    width: 100%;
+    max-width: 400px;
+    min-width: 360px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.btn{
+    border-radius: 20px;
+}
+
+.esq-senha{
+    margin: 2px;
+}
+
+/* Arquivo signup.html*/
+.form-check2{
+    text-align: right;
+}
+.text-muted{
+    text-align: justify;
+}
+
+.ate2am{
+    position: relative;
+    top:-25px;
+}
+
+
