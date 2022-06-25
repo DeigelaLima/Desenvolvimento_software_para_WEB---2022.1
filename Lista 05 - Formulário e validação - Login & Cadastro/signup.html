@@ -47,9 +47,9 @@
                         <div class="modal-body">
                             <form class="form-floating">
                                 <!--Nome-->
-                                <div class="textNome">
+                                <div class="form-floating mt-2">
                                     <input type="text" class="form-control" id="floatingInput" placeholder="Nome:" required>
-                                    <!--<label for="floatingInput">Nome:</label>-->
+                                    <label for="floatingInput">Nome:</label>
                                 </div>
                                 <!--Email-->
                                 <div class="form-floating mt-2">
@@ -63,9 +63,9 @@
                                 </div>
 
                                 <!-- Confimação da senha-->
-                                <div class="form-floating-conf mt-2">
+                                <div class="form-floating mt-2">
                                     <input type="password" class="form-control" id="floatingPassword" placeholder="Confirmação da senha:" required>
-                                    <!--<label for="floatingPassword">Confirmação da senha:</label>-->
+                                    <label for="floatingPassword">Confirmação da senha:</label>
                                 </div>
 
                                 <div class="text-nasc mt-3">
@@ -76,29 +76,56 @@
                                     </div>
                                 </div>
 
+                                <!-- Data -->
+                                <div class="d-flex mb-2">
+                                    <div class="form-floating w-50">
+                                        <select class="form-select" id="floatingSelect" required>
+                                            <option selected></option>     
+                                        </select>  
+                                        <label for="floatingSelect">Mês</label>
+                                    </div>
+
+                                    <div class="form-floating w-50">
+                                        <select class="form-select" id="floatingSelect" required>
+                                            <option selected></option>     
+                                        </select>  
+                                        <label for="floatingSelect">Dia</label>
+                                    </div>
+
+                                    <div class="form-floating w-50">
+                                        <select class="form-select" id="floatingSelect" required>
+                                            <option selected></option>     
+                                        </select>  
+                                        <label for="floatingSelect">Ano</label>
+                                    </div>
+                                </div>
+
                                 <!--Checkbox-->
-                                <div class="form-check2 mt-2">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault"></label>
-                                </div>
-                                <div class="ate2am">
+                               
+                                <div class="d-flex ">
                                     Receba e-mails sobre sua atividade no Tzeet e recomendações.
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+                                    </div>
                                 </div>
+                                
                                 <!--radio-->
                                 Você concorda com nossos Termos, com a Política de Privacidade 
                                 e com o Uso de Cookies?<br>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                    <label class="form-check-label" for="inlineRadio1">Sim</label>
+                                <div class="mt-2">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Sim</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">Não</label>
+                                    </div>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                    <label class="form-check-label" for="inlineRadio2">Não</label>
-                                </div>
-                            </form>
+                            </form>            
                         </div>
-                        <div class="modal-footer btn-inscrever">
-                            <button type="button" class="btn btn-primary">Se inscrever</button>
+                        <div class="px-2 py-2">
+                            <button type="button" class="btn btn-primary w-100">Se inscrever</button>
                         </div>
                     </div>
                 <!--</div>-->
