@@ -12,12 +12,22 @@
     background-color: rgba(52, 26, 223, 0.67);
 }
 
+.content2{
+    width: 100vw;
+    height: 140vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(52, 26, 223, 0.67);
+}
+
 .form-content{
     width: 100%;
     max-width: 400px;
     min-width: 360px;
     background-color: white;
     border-radius: 10px;
+   
 }
 
 .btn{
@@ -28,6 +38,10 @@
     margin: 2px;
 }
 
+.vermelho{
+    color: red;
+}
+
 /* Arquivo signup.html*/
 .text-muted{
     text-align: justify;
@@ -36,6 +50,15 @@
 .name-select{
     text-align: justify;
 }
+
+.form-floating2{
+   margin: 4px;
+}
+
+/* .modal-content{
+    max-height: 800px;
+} */
+
 
 
 
