@@ -14,7 +14,7 @@ const meses = [
     option.textContent = meses[i];
     mesSelect.appendChild(option);
   }
-  mesSelect.value = "Janeiro";
+  mesSelect.value = "";//começa o campos data vazio
 })();
 
 let diaAnterior;
@@ -68,18 +68,18 @@ function popularDias(mes){
         diaSelect.value = diaAnterior - 3;
       }
     }
-  }
+}
 
-  function popularAnos(){
-    // Obter o ano atual como um número.
-    let ano = new Date().getFullYear();
-    // Faz com que os 100 anos anteriores sejam uma opção.
-    for(let i = 0; i < 21; i++){
-      const option = document.createElement("option");
-      option.textContent = ano - i;
-      anoSelect.appendChild(option);
-    }
+function popularAnos(){
+  // Obter o ano atual como um número.
+  let ano = new Date().getFullYear();
+  // Faz com que os 100 anos anteriores sejam uma opção.
+  for(let i = 0; i < 21; i++){
+    const option = document.createElement("option");
+    option.textContent = ano - i;
+    anoSelect.appendChild(option);
   }
+}
 
   popularDias(mesSelect.value);
   popularAnos();
