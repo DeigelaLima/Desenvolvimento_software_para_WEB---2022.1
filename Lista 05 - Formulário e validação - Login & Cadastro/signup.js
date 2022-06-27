@@ -24,7 +24,9 @@ function popularDias(mes){
   // Se eles existem
   while(diaSelect.firstChild){
     diaSelect.removeChild(diaSelect.firstChild);
+
   }
+
   // Contém o número de dias do mês.
   let diaNum;
   // Obter o ano atual.
@@ -56,6 +58,7 @@ function popularDias(mes){
       option.textContent = i;
       diaSelect.appendChild(option);
     }
+    
     if(diaAnterior){
       diaSelect.value = diaAnterior;
       if(diaSelect.value === ""){
@@ -93,6 +96,33 @@ function popularAnos(){
   diaSelect.onchange = function(){
     diaAnterior = diaSelect.value;
   }
+  diaSelect.value = "";
+
+// function limitCaracter(){
+//   if(){
+
+//   }
+// }  
+
+function checkHabilita(){
+  const btnBotao = document.getElementById("btn-button");
+  const radioSim = document.getElementById("inlineRadio1");
+  btnBotao.disabled = true;
+ 
+  
+  document.addEventListener("change", () =>{
+    if(radioSim.checked){
+      btnBotao.disabled = false;// habita botao
+    }
+    else{
+      btnBotao.disabled = true;
+    }
+  })
+}
+
+checkHabilita();
+
+
 
 // // Função para validar os campos do formulário
 // function validar(){
