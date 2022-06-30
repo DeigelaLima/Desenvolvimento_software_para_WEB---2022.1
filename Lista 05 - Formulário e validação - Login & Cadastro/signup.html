@@ -71,11 +71,12 @@
                                     <!-- <small id="erro-email" class="vermelho"></small> -->
                                     <div class="invalid-feedback">
                                         Informe um email válido. 
-                                     </div>
+                                    </div>
                                 </div>
                                 <!--Senha-->
                                 <div class="form-floating mt-2">
-                                    <input type="password" class="form-control" id="senha" placeholder="Password" required>
+                                    <input type="password" class="form-control" name="senha" id="senha" 
+                                     minlength="6" placeholder="Password" required>
                                     <label for="floatingPassword">Senha:</label>
                                     <!-- <small id="erro-senha" class="vermelho"></small> -->
                                     <div class="invalid-feedback">
@@ -85,9 +86,10 @@
 
                                 <!-- Confimação da senha-->
                                 <div class="form-floating mt-2">
-                                    <input type="password" class="form-control" id="confirma-senha" placeholder="Confirmação da senha:" required>
+                                    <input type="password" class="form-control" name="confirmaSenha" id="confirmaSenha"
+                                     minlength="6" placeholder="Confirmação da senha:" required>
                                     <label for="floatingPassword">Confirmação da senha:</label>
-                                    <!-- <small id="erro-confirma-senha" class="vermelho"></small> -->
+                                    <small id="erro-confirma-senha" class="vermelho"></small>
                                     <div class="invalid-feedback">
                                         A senha é obrigatória e deve ter pelo menos 6 caracteres.
                                     </div>
@@ -155,8 +157,8 @@
                                 <!-- BOTÃO -->
                                 <hr>
                                 <div class="col-md-12">
-                                    <button type="submit" class="btn btn-primary w-100" id="btn-button">Se inscrever</button>
-                                    <!-- <button type="submit" class="btn btn-primary w-100" onclick="validar()>Se inscrever</button> -->
+                                    <!-- <button type="submit" class="btn btn-primary w-100" id="btn-button">Se inscrever</button> -->
+                                    <button type="submit" class="btn btn-primary w-100" id="btn-button" onclick="validarConfSenha()">Se inscrever</button>
                                 </div>
                             </form>            
                         </div>

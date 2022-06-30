@@ -98,17 +98,12 @@ function popularAnos(){
   }
   diaSelect.value = "";
 
-// function limitCaracter(){
-//   if(){
-
-//   }
-// }  
-
+  
 function checkHabilita(){
   const btnBotao = document.getElementById("btn-button");
   const radioSim = document.getElementById("inlineRadio1");
   btnBotao.disabled = true;
- 
+  
   
   document.addEventListener("change", () =>{
     if(radioSim.checked){
@@ -123,7 +118,19 @@ function checkHabilita(){
 checkHabilita();
 
 
+// Confirmação de senha
+let senha = document.querySelector('#senha');
+let confSenha = document.querySelector('#confirmaSenha');
 
+confSenha.addEventListener('focusout', () => {
+    if(senha.value !== confSenha){
+      //alert('Senhas não coincidem');
+      document.getElementById('erro-confirma-senha').innerHTML = "As senhas são diferentes.";
+
+    }
+})
+  
+  
 // // Função para validar os campos do formulário
 // function validar(){
 //   var nome = document.getElementById('nome').value;
